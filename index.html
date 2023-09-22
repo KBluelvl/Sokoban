@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <link rel="icon" type="image/x-icon" href="/assets/box.png">
+   <title>Sokoban - Webg2</title>
+   <link rel="stylesheet" href="styles/main.css">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="scripts/state.js"></script>
+   <script src="scripts/game.js"></script>
+   <script src="scripts/levels/levels.js"></script>
+</head>
+
+<body>
+   <h1>Sokoban</h1>
+
+   <div id="world"></div> 
+
+   <div id="changerDeNiveau">
+   <label for="change">Veuillez choisir un niveau</label>
+   <input type="number" id="change">
+   <button id="changer">Changer de niveau(de 0 à 6)</button>
+</div>
+   <output id='compteur'>0</output>
+   <span>
+      <button id="help">Comment jouer?</button>
+      <button id='restart'>Restart</button>
+      <button class='retour'>Retour</button>
+   </span>
+
+   <div id='myModal' class='modal'>
+      <div class='modal-content'>
+         <span class='close'>&times;</span>
+         <p>Dans ce jeu vous devez mettre toutes les boites sur les cibles pour gagner.</p>
+         <img src='assets/help-level.png' height='120'><br><br>
+         <h3>Pour ce faire:</h3>
+         <p>vous pouvez pousser les boites</p>
+         <img src='assets/help-push.png' height='69'><br>
+         <p>Quand une boite est sur la cible elle change de couleur</p>
+         <img src='assets/help-win.png' height='120'><br><br>
+         <h3>Mais attention:</h3>
+         <p>Vous ne pouvez pas pousser deux boites (ou plus) en même temps.</p>
+         <img src='assets/help-double.png' height='69'><br>
+         <p>Vous ne pouvez pas tirer de boite.</p>
+         <img src='assets/help-pull.png' height='69'>
+         <p>Quand vous avez fini. Appuyer sur espace pour passer au niveau suivant.</p>
+      </div>
+   </div>
+
+   <footer>Florian Essomba - 58137</footer>
+
+</body>
+
+</html>
