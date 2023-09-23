@@ -15,19 +15,24 @@
 <body>
    <h1>Sokoban</h1>
 
-   <div id="world"></div> 
-
    <div id="changerDeNiveau">
-   <label for="change">Veuillez choisir un niveau</label>
-   <input type="number" id="change">
-   <button id="changer">Changer de niveau(de 0 à 6)</button>
-</div>
+      <span>
+         <label for="change">Veuillez choisir un niveau</label>
+         <input type="number" id="change">
+      </span>
+      <br>
+      <button id="changer">Changer de niveau(de 0 à 6)</button>
+   </div>
+
+   <div id="world"></div>
+
+   <button id="help">Comment jouer?</button>
+
    <output id='compteur'>0</output>
-   <span>
-      <button id="help">Comment jouer?</button>
-      <button id='restart'>Restart</button>
-      <button class='retour'>Retour</button>
-   </span>
+   
+   <button class='retour'>Retour</button>
+   
+   <button id='restart'>Restart</button>
 
    <div id='myModal' class='modal'>
       <div class='modal-content'>

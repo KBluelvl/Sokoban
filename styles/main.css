@@ -23,6 +23,11 @@
    background-image: url(../assets/box-on-target.png);
 }
 
+.mur{
+   background-color: lightslategray;
+   background-image: url(../assets/wall.png);
+}
+
 .joueur{
    background-color: magenta;
 }
@@ -67,11 +72,6 @@
    50% {background-image: url(../assets/player-up2.png), url(../assets/ground.png);}
 }
 
-.mur{
-   background-color: lightslategray;
-   background-image: url(../assets/wall.png);
-}
-
 h1{
    grid-area: titre;
    font-size: 3em;
@@ -85,24 +85,9 @@ h1{
 
 #world{
    grid-area: jeu;
-   margin-left: auto;
-   margin-right: auto;
    margin-bottom: 1vw;
    overflow:hidden;
-}
-
-#compteur{
-   grid-area: compteur;
-   background-color: #555555;
-   color:white;
-   font-size: 20px;
-   border-radius: 4px;
-   font-family: Helvetica,sans-serif;
-   padding: 12px 40px;
-   margin-left: auto;
-   margin-right: auto;
-   display: flex;
-   margin-bottom: 3vw;
+   margin-left: 6.5%;
 }
 
 footer{
@@ -122,24 +107,42 @@ button {
    padding: 16px 24px;
    margin-right: 10px;
    font-family: Helvetica,sans-serif;
-   font-size: 15px; 
+   font-size: 15px;
+   margin-bottom: 2vw;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-#restart{
-   grid-area: restart;
+#compteur{
+   grid-area: compteur;
+   background-color: #555555;
+   color:white;
+   font-size: 20px;
+   border-radius: 4px;
+   font-family: Helvetica,sans-serif;
+   padding: 12px 40px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 3vw;
 }
 
 #help{
    grid-area: aide;
+   margin: auto;
 }
 
 .retour{
    grid-area: retour;
 }
 
-span{
-   margin-left: 38vw;
-   margin-bottom: 3vw;
+#restart{
+   grid-area: restart;
+}
+
+#changerDeNiveau {
+   grid-area: changeBtn;
+   margin: auto;
+   text-align: center; /* Centre le contenu horizontalement */
 }
 
 .modal {
@@ -192,8 +195,9 @@ body{
    display: grid;
     grid-template-areas:
     'titre titre titre'
-    'jeu jeu jeu'
+    'changeBtn jeu aide'
     'compteur compteur compteur'
-    'span span span'
+    'retour retour retour'
+    'restart restart restart'
     'footer footer footer';
 }
