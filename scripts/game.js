@@ -361,9 +361,13 @@ function boutonRetour() {
 }
 
 function changeLevel() {
-    const niveauDemander = $("#change").val();
     $("#changer").click(function () {
-        initLevel2(niveauDemander);
+        const niveauDemander = $("#change").val() - 1;
+        if (niveauDemander >= 1 && niveauDemander <= 6) {
+            initLevel2(niveauDemander);
+        } else {
+            alert("Doit être entre 1 et 7 !");
+        }
     });
 }
 

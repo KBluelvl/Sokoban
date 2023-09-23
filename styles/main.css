@@ -87,7 +87,7 @@ h1{
    grid-area: jeu;
    margin-bottom: 1vw;
    overflow:hidden;
-   margin-left: 6.5%;
+   margin-left: 4%;
 }
 
 footer{
@@ -200,4 +200,8 @@ body{
     'retour retour retour'
     'restart restart restart'
     'footer footer footer';
+}
+
+#changer {
+   margin-top: 5%;
 }
