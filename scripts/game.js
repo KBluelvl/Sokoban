@@ -363,7 +363,7 @@ function boutonRetour() {
 function changeLevel() {
     $("#changer").click(function () {
         const niveauDemander = $("#change").val() - 1;
-        if (niveauDemander >= 1 && niveauDemander <= 6) {
+        if (niveauDemander >= 0 && niveauDemander <= 6) {
             initLevel2(niveauDemander);
         } else {
             alert("Doit être entre 1 et 7 !");
