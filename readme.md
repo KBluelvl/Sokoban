@@ -11,7 +11,7 @@ N'hésitez pas à me faire un retour sur votre expérience !
 
 Ce jeu vous est proposé par 'Florian Essomba'.
 
-# ENG
+# EN
 
 # Sokoban
 
