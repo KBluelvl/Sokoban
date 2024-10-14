@@ -148,7 +148,7 @@ function move() {
                 }
             }
         } else {
-            alert("vous avez perdu car vous avez fait trop de coup !");
+            alert("Vous avez perdu car vous avez fait trop de coup !");
             initLevel();
         }
     });
@@ -361,8 +361,8 @@ function boutonRetour() {
 }
 
 function changeLevel() {
-    $("#changer").click(function () {
-        const niveauDemander = $("#change").val() - 1;
+    $("#changebtn").click(function () {
+        const niveauDemander = $("#levelNumber").val() - 1;
         if (niveauDemander >= 0 && niveauDemander <= 6) {
             initLevel2(niveauDemander);
         } else {
