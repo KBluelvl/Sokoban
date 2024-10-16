@@ -9,7 +9,7 @@ N'hésitez pas à me faire un retour sur votre expérience !
 
 ## Auteur
 
-Ce jeu vous est proposé par 'Florian Essomba'.
+Ce jeu est réalisé par 'Florian Essomba'.
 
 # EN
 
